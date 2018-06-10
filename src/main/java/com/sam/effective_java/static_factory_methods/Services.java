@@ -1,5 +1,6 @@
-package com.sam.effective_java;
+package com.sam.effective_java.static_factory_methods;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -23,5 +24,8 @@ public class Services {
             throw new IllegalArgumentException ("No Provider registered with name: " + name);
         }
         return p.newService();
+    }
+    public static <K,V> HashMap<K,V> newInstanceHashMap(){
+        return new HashMap<K,V>();
     }
 }
