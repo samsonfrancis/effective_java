@@ -1,5 +1,8 @@
 package com.sam.effective_java.singleton;
 
+/**
+ * This is the best way to implement singleton class with serializer and reflection.
+ */
 public enum  SingletonEnum {
     INSTANCE;
 
