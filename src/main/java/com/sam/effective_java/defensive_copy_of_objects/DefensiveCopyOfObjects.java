@@ -13,8 +13,9 @@ public class DefensiveCopyOfObjects {
     /**
      * The constructor does not directly assign the values it creates a new object with the given values and
      * assigns them to instance variables.
+     *
      * @param startDate startDate not to be modified
-     * @param endDate end date not to be modified
+     * @param endDate   end date not to be modified
      */
     public DefensiveCopyOfObjects(Date startDate, Date endDate) {
         this.startDate = new Date(startDate.getTime());
@@ -24,10 +25,11 @@ public class DefensiveCopyOfObjects {
     /**
      * This constructor is better than the previous as it takes the primitive types as args
      * this is very defensive compared to the previous one.
-     * @param startDateMillies
-     * @param endDateMillies
+     *
+     * @param startDateMillies start date in millies
+     * @param endDateMillies   end date in millies
      */
-    public DefensiveCopyOfObjects(long startDateMillies, long endDateMillies){
+    public DefensiveCopyOfObjects(long startDateMillies, long endDateMillies) {
         this.startDate = new Date(startDateMillies);
         this.endDate = new Date(endDateMillies);
     }
