@@ -1,4 +1,4 @@
-package com.sam.effective_java.use_varargs_judiciously;
+package com.sam.effective_java.return_empty_array_or_collections_not_nulls;
 
 import java.util.ArrayList;
 import java.util.Collections;
